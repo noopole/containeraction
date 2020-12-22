@@ -8,10 +8,10 @@ jobs:
     - uses: action/checkout@v2
     - name: run the action
       id: hello
-      uses: .
+      uses: ./
       with:
         myInput: 'Bruno Gachie'
     - name: output
       run: |
-        echo ${{ step.hello.outputs.memory }}
+        echo ${{ steps.hello.outputs.memory }}
         echo "Mémoire totale affichée avec succès"
