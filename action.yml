@@ -1,0 +1,14 @@
+name: 'my first container action'
+description: 'Netinc'
+author: 'Bruno Gachie'
+inputs:
+  myInputs:
+    description: 'salutation'
+    required: true
+    default: 'B G'
+outputs:
+  myOutput:
+    description: 'Memoire totale'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
